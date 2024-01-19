@@ -8,12 +8,13 @@
 <body>
     <h1>Arithmetic</h1>
     <input id="num1" type="number"> + <input id="num2" type="number"> <button onclick="add()">=</button><label id="sum">?</label>
-    <script src="index.js">
+
+    <script>
         function add(){
-            let num1 = document.getElementById('num1').value;
-            let num2 = document.getElementById('num2').value;
-            let sum = num1.value + num2.value;
-            document.setElementById('sum').innerText = sum;
+            let num1 = document.getElementById('num1');
+            let num2 = document.getElementById('num2'); 
+            let sum= Number(num1.value) + Number(num2.value);         
+            document.getElementById('sum').innerText = sum;
         }
     </script>
 </body>
