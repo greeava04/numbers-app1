@@ -24,9 +24,9 @@
             let num4 = document.getElementById('num4'); 
             let n=num3.value;
             let m=num4.value;
-            const response = await fetch("https://arithmetic-service-mysh.onrender.com//subtract/" + n + "/" + m); 
-            const sum = await response.json();       
-            document.getElementById("sum").innerText = sum;
+            const response = await fetch("https://arithmetic-service-mysh.onrender.com/sub/" + n + "/" + m); 
+            const sub = await response.json();       
+            document.getElementById("sub").innerText = sub;
         }
     </script>
 </body>
